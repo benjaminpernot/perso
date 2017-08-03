@@ -9,13 +9,13 @@
              d:DesignHeight="300" d:DesignWidth="300"
              Name="MyToolWindow">
     <Grid>
-        <StackPanel Orientation="Vertical">
-            <TextBox Name="textboxAddress"></TextBox>
-            <TextBox Name="textboxWidth">128</TextBox>
-            <TextBox Name="textboxHeight">128</TextBox>
-            <Button Name="buttonUpdate" Click="ButtonUpdateOnClick">Update</Button>
-            <TextBox Name="buttonError" Grid.Row="5" Height="42"></TextBox>
-            <Image Name="image"></Image>
-        </StackPanel>
+        <DockPanel>
+            <TextBox Name="textboxAddress" DockPanel.Dock="Top"></TextBox>
+            <TextBox Name="textboxWidth" DockPanel.Dock="Top">128</TextBox>
+            <TextBox Name="textboxHeight" DockPanel.Dock="Top">128</TextBox>
+            <Button Name="buttonUpdate" Click="ButtonUpdateOnClick" DockPanel.Dock="Top">Update</Button>
+            <TextBox Name="buttonError" Grid.Row="5" Height="42" DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto"></TextBox>
+            <Image Name="image" Stretch="Fill"></Image>
+        </DockPanel>
     </Grid>
 </UserControl>

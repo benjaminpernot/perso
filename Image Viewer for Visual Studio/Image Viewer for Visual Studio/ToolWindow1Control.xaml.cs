@@ -107,13 +107,16 @@ namespace Image_Viewer_for_Visual_Studio
             {
                 string addressText = textboxAddress.Text;
                 EnvDTE.Expression evaluated = m_debugger.GetExpression(addressText);
-                IntPtr address = (IntPtr)Convert.ToInt64(evaluated.Value, 10);
+                Int64 address64 = (Int64)new System.ComponentModel.Int64Converter().ConvertFromString(evaluated.Value);
+                IntPtr address = (IntPtr)address64;
 
                 string widthText = textboxWidth.Text;
-                UInt32 width = (UInt32)Convert.ToUInt32(widthText, 10);
+                evaluated = m_debugger.GetExpression(widthText);
+                UInt32 width = (UInt32)new System.ComponentModel.UInt32Converter().ConvertFromString(evaluated.Value);
 
                 string heightText = textboxHeight.Text;
-                UInt32 height = (UInt32)Convert.ToUInt32(heightText, 10);
+                evaluated = m_debugger.GetExpression(heightText);
+                UInt32 height = (UInt32)new System.ComponentModel.UInt32Converter().ConvertFromString(evaluated.Value);
 
                 var buffer = ReadMemoryFromProcess(m_debugger.CurrentProcess, address, width * height * 3);
                 BitmapSource bitmapSource = BitmapSource.Create((int)width, (int)height, 1, 1, PixelFormats.Rgb24, null, buffer, (int)(width * 3));

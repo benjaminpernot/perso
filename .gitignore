@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Image Viewer for Visual Studio/Test/Debug/Test.log
+/Image Viewer for Visual Studio/Test/Debug/Test.Build.CppClean.log
+/Image Viewer for Visual Studio/Test/Release/Test.log
+/Image Viewer for Visual Studio/Test/x64/Debug/Test.log
+/Image Viewer for Visual Studio/Test/x64/Release/Test.log
+/Image Viewer for Visual Studio/Test/Test.vcxproj.filters
+/.vs/perso/v15/.suo
+/.vs
+/.vs
+/Image Viewer for Visual Studio/Properties
+/Image Viewer for Visual Studio/obj/Debug
+/Image Viewer for Visual Studio/Image Viewer for Visual Studio/bin/Debug
+/Image Viewer for Visual Studio/Image Viewer for Visual Studio/obj/Debug
+/Debug

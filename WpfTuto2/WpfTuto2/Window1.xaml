@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfTuto2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTuto2"
+        mc:Ignorable="d"
+        Title="Window1">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top">dfdsf</TextBlock>
+        <TextBlock DockPanel.Dock="Top">dfdsf</TextBlock>
+    <Image Name="image" Source="D:\Dropbox\MULTIMEDIA\Images 2006-04-01\Photos\Misc 2017\20170325_110037.jpg" Stretch="Fill"></Image>
+    </DockPanel>
+</Window>

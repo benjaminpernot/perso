@@ -1,0 +1,14 @@
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\bin\Debug\WpfTuto.exe.config
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\bin\Debug\WpfTuto.exe
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\bin\Debug\WpfTuto.pdb
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\WpfTuto.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\MainWindow.g.cs
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\App.g.cs
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\WpfTuto_MarkupCompile.cache
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\WpfTuto_MarkupCompile.lref
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\MainWindow.baml
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\WpfTuto.g.resources
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\WpfTuto.Properties.Resources.resources
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\WpfTuto.csproj.GenerateResource.Cache
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\WpfTuto.exe
+C:\Users\Ben\Source\Repos\perso\WpfTuto\WpfTuto\obj\Debug\WpfTuto.pdb
