@@ -2,10 +2,6 @@
 //
 
 #include "stdafx.h"
-#include <stdexcept>
-#include <cstdio>
-#include <cstdlib>
-#include <iostream>
 
 extern "C"
 {
@@ -17,6 +13,13 @@ extern "C"
 #include <libswresample/swresample.h>
 #include <libswscale/swscale.h>
 }
+
+#include <stdexcept>
+#include <cstdio>
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+
 
 inline void ThrowOnAVError(int error)
 {
@@ -66,7 +69,10 @@ int main()
 		av_image_fill_arrays(frameOutRGB24->data, frameOutRGB24->linesize, frameOutRGB24Buffer, (AVPixelFormat)frameOutRGB24->format, frameOutRGB24->width, frameOutRGB24->height, 1);
 		SwsContext* img_convert_ctx;
 		img_convert_ctx = sws_getContext(frameOut->width, frameOut->height, (AVPixelFormat)frameOut->format, frameOutRGB24->width, frameOutRGB24->height, (AVPixelFormat)frameOutRGB24->format, SWS_BICUBIC, NULL, NULL, NULL);
-		auto ret = sws_scale(img_convert_ctx, frameOut->data, frameOut->linesize, 0, frameOutRGB24->height, frameOutRGB24->data, frameOutRGB24->linesize);
+		auto ret = sws_scale(img_convert_ctx, frameOut->data, frameOut->linesize, 0, frameOut->height, frameOutRGB24->data, frameOutRGB24->linesize);
+		std::ofstream out("d:\\out.raw", std::ios::binary);
+		out.write((char*)(frameOutRGB24->data[0]), numBytes);
+		out.close();
 		std::cout << "OK" << std::endl;
 	}
 	catch (const std::exception& exception)
